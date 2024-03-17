@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'android';
+  src: url('fontes/idroid.otf') format('opentype');
+}
+
+:root{
+  --001: #1A5C38;
+  --002: #C5EBD6;
+  --003: #84E1AD;
+  --004: #3BD580;
+  --005: #2FA866;
+}
+
+body{
+  background-color: #84E1AD;
+
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+header{
+  background-image: linear-gradient(to top, #1A5C38, #3BD580);
+  padding: 20px;
+  height: 100px;
+}
+
+header > h1{
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+header > p {
+  text-align: center;
+  color: white;
+  min-width: 320px;
+  max-width: 500px;
+  margin: auto;
+}
+
+nav {
+  padding: 5px;
+  background-color: var(--001);
+}
+
+nav > a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+}
+
+nav > a:hover{
+  background-color: var(--003);
+  color: black;
+  border-radius: 4px;
+  font-size: 1.1em;
+}
+
+main{
+  min-width: 320px;
+  max-width: 800px;
+  background-color: white;
+  margin: auto;
+  border-radius: 0px 0px 10px 10px;
+  line-height: 1.5em;
+  padding: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.titulo{
+  background-image: linear-gradient(to right, #b5e1c7, transparent);
+  text-indent: 5px;
+}
+
+
+main > h2{
+  font-family: 'android';
+  margin: 10px;
+  padding-bottom: 2px;
+  
+  color: #266543;
+}
+
+main>p {
+  text-indent: 20px;
+  text-align: justify;
+}
+
+main img{
+  width: 100%;
+}
+
+#imagem {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.video{
+  background-color: var(--001);
+  padding: 10px;
+  text-align: center;
+  margin: 10px -10px 10px -10px;
+  padding-bottom: 56.5%;
+  position: relative;
+}
+
+.video > iframe{
+  position: absolute;
+  top:5%;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+}
+
+section{
+  background-color: var(--002);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.534);
+}
+
+section > h2{
+  background-color: var(--005);
+  padding: 9px;
+  margin: -10px -10px 10px -10px;
+  border-radius: 10px 10px 0px 0px;
+  font-weight: 200;
+  font-size: 1.5em;
+  color: white;
+}
+
+section > ul{
+  padding: 20px;
+  columns: 2;
+}
+
+section > p {
+  text-indent: 15px;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+footer{
+  background-color: #1A5C38;
+  margin-top: 10px;
+}
+footer> p {
+  text-align: center;
+  color: white;
+  padding: 4px;
+  font-weight: 100;
+  font-size: 1em;
+}
+
